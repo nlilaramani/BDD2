@@ -34,19 +34,6 @@ public class BankAccountSteps {
        checking=new BankAccount(123,bc,"checking",2500.00);
     }
     
-    @When("Tom transfers {double} from Savings to Checking")
-    public void tom_transfers_from_Savings_to_Checking(Double amount) {
-        saving.transferMoney(amount, checking);
-    }
-    @Then("Savings has balance of {double}")
-    public void savings_has_balance_of(Double bal) {
-        Assert.assertEquals(saving.getBalance(), bal,0.0);
-    }
-
-    @Then("Checking has balance of {double}")
-    public void checking_has_balance_of(Double bal) {
-    // Write code here that turns the phrase above into concrete actions
-         Assert.assertEquals(checking.getBalance(), bal,0.0);
-    }
+   
     
 }
